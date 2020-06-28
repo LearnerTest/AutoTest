@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="suitename">
+    //运行全部类
+    <test name="runAll">
+        <classes>
+            <class name="com.imooc.testng.groups.GroupsOnClass1"/>
+            <class name="com.imooc.testng.groups.GroupsOnClass2"/>
+            <class name="com.imooc.testng.groups.GroupsOnClass3"/>
+        </classes>
+    </test>
+    //组测试，只运行部分类
+    <test name ="run only stu">
+        <groups>
+            <run>
+                <include name = "teacher"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.imooc.testng.groups.GroupsOnClass1"/>
+            <class name="com.imooc.testng.groups.GroupsOnClass2"/>
+            <class name="com.imooc.testng.groups.GroupsOnClass3"/>
+        </classes>
+    </test>
+</suite>
