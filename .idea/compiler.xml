@@ -13,6 +13,7 @@
     <bytecodeTargetLevel>
       <module name="Chapter5" target="1.5" />
       <module name="Chapter6" target="1.5" />
+      <module name="TestJava" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
