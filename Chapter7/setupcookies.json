@@ -1,0 +1,40 @@
+[
+  {
+    "description": "带cookie的get请求",
+    "request": {
+      "uri": "/demo",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text": "cookie测试"
+    }
+  },
+
+  {
+    "description": "post带cookie",
+    "request": {
+      "uri": "/demo1",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "zhangsan",
+        "age": "19"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "name": "wang",
+        "kfg": 1
+      }
+    }
+  }
+]

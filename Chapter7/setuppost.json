@@ -1,0 +1,32 @@
+[
+  {
+    "description": "post请求测试",
+    "request": {
+      "uri": "/demo",
+      "method": "post"
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text": "post测试"
+    }
+  },
+  {
+    "description":"带参post请求",
+    "request":{
+      "uri":"/demo1",
+      "method":"post",
+      "forms":{
+        "name":"canshu",
+        "sex":"man"
+      }
+    },
+    "response":{
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text": "post测试"
+    }
+  }
+]

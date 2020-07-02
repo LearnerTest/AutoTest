@@ -1,0 +1,8 @@
+java -jar moco-runner-0.10.0-standalone.jar http -p 9100 -c startup1.json
+
+./moco-runner-0.10.0-standalone.jar 指jar包所在目录（因为jar就在当前目录下所以这里使用的是相对路径）
+http 指接口使用http协议
+-p 8899 指使用8899端口
+-c startup1 指需要运行的json文件
+
+java -jar moco-runner-0.10.0-standalone.jar" http -p 8988 -c Setup.json

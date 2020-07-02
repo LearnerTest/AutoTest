@@ -1,0 +1,32 @@
+[
+  {
+    "description": "无参get请求",
+    "request": {
+      "uri": "/demo",
+      "method": "get"
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text": "第一个moco框架demo测试"
+    }
+  },
+  {
+    "description": "带参模拟",
+    "request": {
+      "uri": "/demo1",
+      "method": "get",
+      "queries": {
+        "name": "test",
+        "age": "18"
+      }
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text": "test"
+    }
+  }
+]

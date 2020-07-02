@@ -1,0 +1,25 @@
+[
+  {
+    "description":"带header的请求",
+    "request":{
+      "uri":"/demo",
+      "method":"post",
+      "headers":{
+        "content-type":"application/json"
+      },
+      "json":{
+        "name":"wang",
+        "age":12
+      }
+    },
+    "response":{
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "json":{
+        "status":1,
+        "wuzhi":"已配置"
+      }
+    }
+  }
+]
