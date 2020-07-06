@@ -49,7 +49,7 @@
       "status": 200,
       "json": {
         "name": "wang",
-        "kfg": 1
+        "kfg": "1"
       }
     }
   }

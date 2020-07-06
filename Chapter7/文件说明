@@ -5,4 +5,4 @@ http 指接口使用http协议
 -p 8899 指使用8899端口
 -c startup1 指需要运行的json文件
 
-java -jar moco-runner-0.10.0-standalone.jar" http -p 8988 -c Setup.json
+java -jar moco-runner-0.10.0-standalone.jar http -p 8988 -c Setup.json

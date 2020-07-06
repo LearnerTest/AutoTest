@@ -17,9 +17,9 @@ public class MyClientDemo {
         // 创建Get请求
         HttpGet get = new HttpGet("http://wwww.baidu.com");
         HttpClient client = new DefaultHttpClient();
-        HttpResponse response= client.execute(get);
+        HttpResponse response = client.execute(get);
         ////根据字符集重新编码成正确的
-        result = EntityUtils.toString(response.getEntity(),"utf-8");
+        result = EntityUtils.toString(response.getEntity(), "utf-8");
         System.out.print(result);
     }
 }
