@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe2800a7-66b9-433e-8372-1dc0ec511fbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_0_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter10/src/main/java/com/course/config/SwaggerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter10/Chapter10.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter10/Chapter10.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter10/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter10/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter10/src/main/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter10/src/main/java/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter10/src/main/java/com/course/server/MyGetMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter10/src/main/java/com/course/server/MyGetMethod.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Chapter6/target/" />
     <ignored path="$PROJECT_DIR$/Chapter5/target/" />
@@ -51,7 +33,7 @@
     <session id="-404447297">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.21" value="1" />
@@ -91,7 +73,7 @@
           <entry key="java" value="3396" />
           <entry key="json" value="1504" />
           <entry key="properties" value="143" />
-          <entry key="txt" value="9" />
+          <entry key="txt" value="11" />
           <entry key="xml" value="259" />
           <entry key="文件说明" value="22" />
         </counts>
@@ -100,7 +82,7 @@
         <counts>
           <entry key="JAVA" value="3396" />
           <entry key="JSON" value="1504" />
-          <entry key="PLAIN_TEXT" value="31" />
+          <entry key="PLAIN_TEXT" value="33" />
           <entry key="Properties" value="143" />
           <entry key="XML" value="435" />
         </counts>
@@ -351,7 +333,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594718429504" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594718533677" />
     <property name="last_opened_file_path" value="F:/jhfk_F" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -475,7 +457,7 @@
       <workItem from="1594092470584" duration="6277000" />
       <workItem from="1594170147200" duration="586000" />
       <workItem from="1594369271952" duration="1586000" />
-      <workItem from="1594707423940" duration="7201000" />
+      <workItem from="1594707423940" duration="7519000" />
     </task>
     <task id="LOCAL-00001" summary="0701">
       <created>1593589102970</created>
@@ -526,7 +508,28 @@
       <option name="project" value="LOCAL" />
       <updated>1594371158822</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="0714">
+      <created>1594718244346</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1594718244346</updated>
+    </task>
+    <task id="LOCAL-00009" summary="0714">
+      <created>1594718442481</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1594718442481</updated>
+    </task>
+    <task id="LOCAL-00010" summary="0714">
+      <created>1594718459126</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1594718459126</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -562,11 +565,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67504000" />
+    <option name="totallyTimeSpent" value="67822000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -580,7 +582,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="1" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.30706075" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.30706075" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
@@ -588,7 +590,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.38423645" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.26929393" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="12" visible="true" weight="0.26929393" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32676518" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -617,7 +619,8 @@
     <MESSAGE value="0703" />
     <MESSAGE value="0706" />
     <MESSAGE value="0710" />
-    <option name="LAST_COMMIT_MESSAGE" value="0710" />
+    <MESSAGE value="0714" />
+    <option name="LAST_COMMIT_MESSAGE" value="0714" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Chapter5/Chapter5.iml">
