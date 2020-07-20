@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @RestController
-@Api(value = "/", description = "这是我的全部post请求")
+@Api(value = "v1", description = "这是我的全部post请求")
 @RequestMapping("v1")
 public class MyPostMethod {
 

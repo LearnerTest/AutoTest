@@ -1,0 +1,27 @@
+server:
+  port: 8888
+
+logging:
+  path: logs
+  file: mylog.log
+
+
+spring:
+  application:
+    name: mytest
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@192.168.70.10:1521/eporcl
+    username: jhfk_dev2
+    password: jhfk_dev2
+
+#  datasource1:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://192.168.1.7:3306/course
+#    username: admin
+#    password: 123456
+
+mybatis:
+  type-aliases-package: com.course.model
+  mapper-locations:
+  - mapper/*
