@@ -1,9 +1,11 @@
 package com.course.controller;
 
+import com.course.model.User;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,4 +23,10 @@ public class Demo {
         return template.selectOne("getUserCount");
     }
 
+    @RequestMapping(value = "/addName",method = RequestMethod.POST)
+    @ApiOperation(value ="增加用户",httpMethod = "POST")
+    public int addName(@RequestBody User user){
+        int result = template.insert("addUser",user);
+        return result;
+    }
 }

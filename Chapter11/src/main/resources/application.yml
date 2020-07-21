@@ -1,5 +1,5 @@
 server:
-  port: 8888
+  port: 8899
 
 logging:
   path: logs
@@ -11,9 +11,9 @@ spring:
     name: mytest
   datasource:
     driver-class-name: oracle.jdbc.driver.OracleDriver
-    url: jdbc:oracle:thin:@192.168.70.10:1521/eporcl
-    username: jhfk_dev2
-    password: jhfk_dev2
+    url: jdbc:oracle:thin:@192.168.70.42:1521/orcl
+    username: hndb_test_s1
+    password: hndb_test_s1
 
 #  datasource1:
 #    driver-class-name: com.mysql.jdbc.Driver

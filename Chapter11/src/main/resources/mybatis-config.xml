@@ -16,12 +16,17 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
+
+    <!--<settings>-->
+        <!--<setting name="jdbcTypeForNull" value="NULL"/>-->
+    <!--</settings>-->
+    
     <typeAliases>
         <package name="com.course.model"/>
     </typeAliases>
+    
     <mappers>
         <mapper resource="mapper/mysql.xml"/>
-
-
     </mappers>
+
 </configuration>

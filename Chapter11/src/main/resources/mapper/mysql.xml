@@ -5,15 +5,16 @@
 
 <mapper namespace="com.course">
     <select id="getUserCount" resultType="Integer">
-        SELECT COUNT(*) FROM ep11
+        SELECT COUNT(*) FROM lc010
 
     </select>
 
-    <!--<insert id="addUser" parameterType="com.course.model.User">-->
-        <!--insert into user(id,name,age,sex)-->
-        <!--values(#{id},#{name},#{age},#{sex})-->
+    <insert id="addUser" parameterType="com.course.model.User">
+        insert into lc009(AAC001,AAC003,AAC004)
+--         oracle将jdbcType=VARCHAR加上
+        values(#{AAC001,jdbcType=VARCHAR},#{AAC003,jdbcType=VARCHAR},#{AAC004,jdbcType=VARCHAR})
 
-    <!--</insert>-->
+    </insert>
 
     <!--<update id="updateUser" parameterType="com.course.model.User">-->
         <!--update user set name=#{name},age=#{age}-->
