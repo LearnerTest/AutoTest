@@ -16,15 +16,16 @@
 
     </insert>
 
-    <!--<update id="updateUser" parameterType="com.course.model.User">-->
-        <!--update user set name=#{name},age=#{age}-->
-        <!--where id=#{id}-->
+    <update id="updateUser" parameterType="com.course.model.User">
+        update lc009 set AAC003=#{AAC003},AAC004=#{AAC004}
+        where AAC001=#{AAC001}
 
-    <!--</update>-->
-    <!--<delete id="deleteUser" parameterType="Integer">-->
-        <!--delete from user where id = #{id}-->
+    </update>
 
-    <!--</delete>-->
+    <delete id="deleteUser" parameterType="String">
+        delete from lc009 where AAC001 = #{AAC001}
+
+    </delete>
 
 
 </mapper>
