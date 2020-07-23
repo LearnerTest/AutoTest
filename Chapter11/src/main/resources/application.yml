@@ -3,7 +3,7 @@ server:
 
 logging:
   path: logs
-  file: mylog.log
+  file: TestLog.log
 
 
 spring:

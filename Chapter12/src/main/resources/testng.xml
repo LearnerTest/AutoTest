@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="用户管理系统测试套件">
+    <test name ="extensReport">
+        <classes>
+            <class name ="com.imooc.extents.demo.ExtentsDemo">
+                <methods>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                    <include name="logDemo"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <!--<listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"/>-->
+        <!--<listener class-name="com.imooc.extents.demo.ExtentTestNGIReporterListenerOld" />-->
+        <listener class-name="com.imooc.extents.demo.ExtentTestNGIReporterListener" />
+
+    </listeners>
+</suite>
