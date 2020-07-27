@@ -10,7 +10,7 @@
                 <!-- 1.加载数据库驱动 -->
                 <property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
                 <!-- 2.数据库连接地址 -->
-                <property name="url" value="dbc:oracle:thin:@192.168.70.42:1521/orcl"/>
+                <property name="url" value="jdbc:oracle:thin:@192.168.70.42:1521/orcl"/>
                 <!-- 数据库用户... -->
                 <property name="username" value="hndb_test_s1"/>
                 <!-- 数据库密码... -->

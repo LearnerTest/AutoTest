@@ -2,7 +2,7 @@
 <suite name="用户管理系统测试套件">
     <test name ="extensReport">
         <classes>
-            <class name ="com.imooc.extents.demo.ExtentsDemo">
+            <class name ="com.course.cases.">
                 <methods>
                     <include name="test1"/>
                     <include name="test2"/>
@@ -14,7 +14,7 @@
     <listeners>
         <!--<listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"/>-->
         <!--<listener class-name="com.imooc.extents.demo.ExtentTestNGIReporterListenerOld" />-->
-        <listener class-name="com.imooc.extents.demo.ExtentTestNGIReporterListener" />
+        <listener class-name="com.course.config.ExtentTestNGIReporterListener" />
 
     </listeners>
 </suite>
