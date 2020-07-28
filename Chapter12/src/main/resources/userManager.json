@@ -2,7 +2,7 @@
   {
     "description":"登陆接口,成功后返回cookies",
     "request":{
-      "uri":"/login",
+      "uri":"/getcookie",
       "method":"post",
       "json":{
         "name":"zhangsan",

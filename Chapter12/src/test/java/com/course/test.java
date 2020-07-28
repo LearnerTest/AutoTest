@@ -1,5 +1,6 @@
 package com.course;
 
+import com.course.cases.LoginTest;
 import com.course.model.interfaceName;
 import com.course.model.loginCase;
 import com.course.utils.ConfigFile;
@@ -17,6 +18,8 @@ public class test {
 
         SqlSession s =DatabseUtil.getSqlSession();
         loginCase logincase= s.selectOne("loginCase",1);
-        System.out.println(logincase.getExpected());
+//        System.out.println(ConfigFile.getUrl(interfaceName.LOGIN));
+//        System.out.println(LoginTest.getResult(logincase));
+//        LoginTest.getResult1();
     }
 }

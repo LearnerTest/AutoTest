@@ -2,11 +2,10 @@
 <suite name="用户管理系统测试套件">
     <test name ="extensReport">
         <classes>
-            <class name ="com.course.cases.">
+            <class name ="com.course.cases.LoginTest">
                 <methods>
-                    <include name="test1"/>
-                    <include name="test2"/>
-                    <include name="logDemo"/>
+                    <include name="loginTrue"/>
+                    <include name="loginfalse"/>
                 </methods>
             </class>
         </classes>

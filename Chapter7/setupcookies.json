@@ -52,5 +52,22 @@
         "kfg": "1"
       }
     }
+  },
+  {
+    "description": "post带cookie",
+    "request": {
+      "uri": "/login",
+      "method": "post",
+      "json": {
+        "name": "zhangsan",
+        "age": "19"
+      }
+    },
+    "response": {
+      "cookies":{
+        "login":"true"
+      },
+      "text":"恭喜获得cookie"
+    }
   }
 ]

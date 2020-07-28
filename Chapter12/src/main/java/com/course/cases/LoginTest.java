@@ -6,6 +6,7 @@ import com.course.model.loginCase;
 import com.course.utils.ConfigFile;
 import com.course.utils.DatabseUtil;
 import org.apache.http.HttpResponse;
+import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
@@ -18,11 +19,15 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.net.CookieStore;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 public class LoginTest {
 
+
+
     @BeforeTest(groups = "loginTrue",description = "测试准备工作,获取HttpClient对象")
-    public static void beforeTest(){
+    public void beforeTest(){
         TestConfig.addUserUrl = ConfigFile.getUrl(interfaceName.ADDUSER);
         TestConfig.getUserInfoUrl = ConfigFile.getUrl(interfaceName.GETUSERINFO);
         TestConfig.getUserListUrl = ConfigFile.getUrl(interfaceName.GETUSERLIST);
@@ -41,7 +46,7 @@ public class LoginTest {
 //        System.out.println(expected);
         String result = getResult(logincase);
         System.out.println(result);
-//        Assert.assertEquals(expected,result);
+        Assert.assertEquals(expected,result);
     }
 
     @Test(description = "登录失败接口")
@@ -54,15 +59,18 @@ public class LoginTest {
         Assert.assertEquals(logincase.getExpected(),result);
     }
 
-    public static String getResult(loginCase logincase) throws IOException {
-        //下边的代码为写完接口的测试代码，//声明一个方法，这个方法就是post方法
+    public  static String getResult(loginCase logincase) throws IOException {
+        //下边的代码为写完接口的测试代码，声明一个post方法
         HttpPost post = new HttpPost(TestConfig.loginUrl);
+//        HttpGet get = new HttpGet(TestConfig.loginUrl);
         //添加参数
         JSONObject param = new JSONObject();
         param.put("userName",logincase.getUserName());
         param.put("password",logincase.getPassword());
+//        param.put("userName","zhangsan");
+//        param.put("password","123456");
         //设置请求头信息，设置header
-        post.setHeader("content-type","application/json");
+//        post.setHeader("content-type","application/json");
         //将参数信息添加到方法中
         StringEntity entity = new StringEntity(param.toString(),"utf-8");
         post.setEntity(entity);
@@ -77,5 +85,4 @@ public class LoginTest {
         TestConfig.store = TestConfig.defaultHttpClient.getCookieStore();
         return result;
     }
-
 }
