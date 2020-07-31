@@ -8,6 +8,18 @@
                     <include name="loginfalse"/>
                 </methods>
             </class>
+            <class name ="com.course.cases.GetUserInfoTest">
+            <methods>
+                <include name ="getUserInfo"/>
+            </methods>
+        </class>
+
+            <class name ="com.course.cases.GetUserInfoListTest">
+                <methods>
+                    <include name ="getUserListInfo"/>
+                </methods>
+            </class>
+
         </classes>
     </test>
     <listeners>

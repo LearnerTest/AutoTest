@@ -22,7 +22,7 @@
       "uri":"/getUserInfo",
       "method":"post",
       "json":{
-        "userId":"1"
+        "userId":1
       },
       "cookies":{
         "login":"true"
@@ -32,7 +32,7 @@
       "json":{
         "id":"1",
         "userName":"zhangsan",
-        "password":"123456",
+        "passWord":"123456",
         "age":"20",
         "sex":"0",
         "permission":"0",

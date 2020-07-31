@@ -4,7 +4,7 @@ public class Users {
 
     private int id;
     private String userName;
-    private String passWord;
+    private String password;
     private String age;
     private String sex;
     private String permission;
@@ -12,13 +12,13 @@ public class Users {
 
     @Override
     public String toString() {
-        return ("id:"+id+"," +
+        return ("{id:"+id+"," +
                 "userName:"+userName +"," +
-                "passWord:"+passWord +","+
+                "passWord:"+password +","+
                 "age:"+age +","+
                 "sex:"+sex +","+
                 "permission:"+permission +","+
-                "isDelete:"+isDelete +","+"}"
+                "isDelete:"+isDelete +"}"
 
 
     );

@@ -1,5 +1,6 @@
 package com.course.cases;
 
+//import com.alibaba.fastjson.JSONObject;
 import com.course.config.TestConfig;
 import com.course.model.interfaceName;
 import com.course.model.loginCase;
@@ -15,6 +16,7 @@ import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
 import java.io.IOException;
 
 public class LoginTest {
@@ -58,31 +60,29 @@ public class LoginTest {
         Assert.assertNotEquals(logincase.getExpected(), result);
     }
 
-        public static String getResult (loginCase logincase) throws IOException {
-            //下边的代码为写完接口的测试代码，声明一个post方法
-            HttpPost post = new HttpPost(TestConfig.loginUrl);
+    public static String getResult(loginCase logincase) throws IOException {
+        //下边的代码为写完接口的测试代码，声明一个post方法
+        HttpPost post = new HttpPost(TestConfig.loginUrl);
 //        HttpGet get = new HttpGet(TestConfig.loginUrl);
-            //添加参数
-            JSONObject param = new JSONObject();
-            //需要和mock的接口参数名一致
-            param.put("name", logincase.getUserName());
-            param.put("password", logincase.getPassword());
-//        param.put("userName","zhangsan");
-//        param.put("password","123456");
-            //设置请求头信息，设置header
-//        post.setHeader("content-type","application/json");
-            //将参数信息添加到方法中
-            StringEntity entity = new StringEntity(param.toString(), "utf-8");
-            post.setEntity(entity);
-            //声明一个对象来进行响应结果的存储
-            String result;
-            //执行post方法
-            HttpResponse response = TestConfig.defaultHttpClient.execute(post);
-            //获取响应结果
-            result = EntityUtils.toString(response.getEntity(), "utf-8");
-            System.out.println(result);
-            //以下代码是获取cookie信息
-            TestConfig.store = TestConfig.defaultHttpClient.getCookieStore();
-            return result;
-        }
+        //添加参数
+        JSONObject param = new JSONObject();
+        //需要和mock的接口参数名一致
+        param.put("name", logincase.getUserName());
+        param.put("password", logincase.getPassword());
+        //设置请求头信息，设置header
+        post.setHeader("content-type", "application/json");
+        //将参数信息添加到方法中
+        StringEntity entity = new StringEntity(param.toString(), "utf-8");
+        post.setEntity(entity);
+        //声明一个对象来进行响应结果的存储
+        String result;
+        //执行post方法
+        HttpResponse response = TestConfig.defaultHttpClient.execute(post);
+        //获取响应结果
+        result = EntityUtils.toString(response.getEntity(), "utf-8");
+        System.out.println(result);
+        //以下代码是获取cookie信息
+        TestConfig.store = TestConfig.defaultHttpClient.getCookieStore();
+        return result;
     }
+}
