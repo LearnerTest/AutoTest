@@ -5,7 +5,7 @@
             <class name ="com.course.cases.LoginTest">
                 <methods>
                     <include name="loginTrue"/>
-                    <include name="loginfalse"/>
+                    <!--<include name="loginfalse"/>-->
                 </methods>
             </class>
             <class name ="com.course.cases.GetUserInfoTest">
@@ -14,11 +14,11 @@
             </methods>
         </class>
 
-            <class name ="com.course.cases.GetUserInfoListTest">
-                <methods>
-                    <include name ="getUserListInfo"/>
-                </methods>
-            </class>
+            <!--<class name ="com.course.cases.GetUserInfoListTest">-->
+                <!--<methods>-->
+                    <!--<include name ="getUserListInfo"/>-->
+                <!--</methods>-->
+            <!--</class>-->
 
         </classes>
     </test>

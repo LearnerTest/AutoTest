@@ -1,7 +1,9 @@
 package com.course.cases;
 
-//import com.alibaba.fastjson.JSONArray;
-//import com.alibaba.fastjson.JSONObject;
+
+
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import com.course.config.TestConfig;
 import com.course.model.Users;
 import com.course.model.getUserInfoCase;
@@ -11,8 +13,8 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.util.EntityUtils;
 import org.apache.ibatis.session.SqlSession;
-import org.json.JSONArray;
-import org.json.JSONObject;
+//import org.json.JSONArray;
+//import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.io.IOException;
@@ -20,33 +22,30 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import static com.mongodb.Bytes.getType;
+
 public class GetUserInfoTest {
 
     @Test(dependsOnGroups="loginTrue",description = "获取userId为1的用户信息")
     public void getUserInfo() throws IOException, InterruptedException {
         SqlSession session = DatabseUtil.getSqlSession();
         getUserInfoCase getUserInfo = session.selectOne("getUserInfoCase",1);
-//        System.out.println(getUserInfo.toString());
-//        System.out.println(TestConfig.getUserInfoUrl);
         JSONArray resultJson = getJsonResult(getUserInfo);
         Thread.sleep(2000);
         Users user = session.selectOne(getUserInfo.getExpected(),getUserInfo);
-        System.out.println("自己查数据库信息："+user.toString());
-//        List userList = new ArrayList();
-//        userList.add(user);
-//        JSONArray jsonArray = new JSONArray(userList);
-//        JSONArray jsonArray = new JSONArray();
-//        jsonArray.add(user);
-//        System.out.println("查询获取用户信息："+jsonArray.toString());
-//        System.out.println("接口调用获取用户信息："+resultJson.toString());
-        List userList = new ArrayList();
-        userList.add(user);
-        JSONArray jsonArray = new JSONArray(userList);
-//        JSONArray jsonArray1 = new JSONArray(resultJson.getString(0));
-        Assert.assertEquals(jsonArray,resultJson.toString());
+        System.out.println(user.toString());
+
+        //取接口返回数据部分字段进行判断
+        for(int i= 0;i<resultJson.size();i++){
+            String jsonObject1 = (String) resultJson.get(i);
+            JSONObject jsonObject = JSONObject.parseObject(jsonObject1);
+            String message = jsonObject.getString("userName");
+            System.out.println(message);
+            Assert.assertEquals(message,"zhangsan");
+        }
     }
 
-    private JSONArray getJsonResult(getUserInfoCase userinfo) throws IOException {
+    public JSONArray getJsonResult(getUserInfoCase userinfo) throws IOException {
         HttpPost post = new HttpPost(TestConfig.getUserInfoUrl);
         //添加参数,JSONObject不能选错了
         JSONObject param = new JSONObject();
