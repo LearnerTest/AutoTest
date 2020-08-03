@@ -53,21 +53,9 @@
     </select>
 
     <!--获取用户列表-->
-    <select id="getUserList" parameterType="com.course.model.getUserListCase" resultType="com.course.model.Users">
+    <select id="getUserList" parameterType="String" resultType="com.course.model.Users">
         <!-- SQL语句 -->
-        select * from users
-        <trim prefix="WHERE" prefixOverrides="and">
-            <if test="null != userName and '' !=userName">
-                AND userName=#{userName}
-            </if>
-            <if test="null != sex and '' !=sex">
-                AND sex=#{sex}
-            </if>
-            <if test="null != age and '' !=age">
-                AND age=#{age}
-            </if>
-
-        </trim>
+        select * from users where sex=#{sex}
 
     </select>
 

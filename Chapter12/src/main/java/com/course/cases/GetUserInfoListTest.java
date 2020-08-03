@@ -1,6 +1,6 @@
 package com.course.cases;
 
-import com.alibaba.fastjson.JSONArray;
+//import com.alibaba.fastjson.JSONArray;
 //import com.alibaba.fastjson.JSONObject;
 import com.course.config.TestConfig;
 import com.course.model.Users;
@@ -11,12 +11,12 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.util.EntityUtils;
 import org.apache.ibatis.session.SqlSession;
-//import org.json.JSONArray;
+import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -27,24 +27,18 @@ public class GetUserInfoListTest {
         SqlSession session = DatabseUtil.getSqlSession();
         getUserListCase getUserList = session.selectOne("getUserListCase",1);
         JSONArray resultJson = getJsonResult(getUserList);
-        Thread.sleep(2000);
-        List<Users> userList = session.selectList(getUserList.getExpected(),getUserList);
-        for(Users u:userList){
-            System.out.println("获取的user："+u.toString());
-        }
-        JSONArray userListJson = new JSONArray();
-        userListJson.add(userList);
-        System.out.println("cess"+ userListJson.toString().length());
-        System.out.println("cess"+ resultJson.toString().length());
-        Assert.assertEquals(userListJson.toString().length(),resultJson.toString().length());
-
-//        for(int i = 0 ;i<resultJson.toString().length();i++){
-//            JSONObject expect = (JSONObject) resultJson.get(i);
-//            JSONObject actual = (JSONObject) userListJson.get(i);
-//            Assert.assertEquals(expect.toString(),actual.toString());
-//
+//        Thread.sleep(2000);
+        List<Users> userList = session.selectList(getUserList.getExpected(),"0");
+// for(Users u:userList){
+//            System.out.println("获取的user："+u.toString());
 //        }
-
+//        JSONArray userListJson = JSONArray.parseArray(userList.toString());
+        JSONObject expect1 =  resultJson.getJSONObject(0);
+        Assert.assertEquals(expect1.get("userName"),"zhangsan");
+        for(int i = 0 ;i<resultJson.length();i++){
+            JSONObject expect =  resultJson.getJSONObject(i);
+            System.out.println(expect.get("userName"));
+        }
     }
 
     private JSONArray getJsonResult(getUserListCase getuserlist) throws IOException {
@@ -64,8 +58,8 @@ public class GetUserInfoListTest {
         //执行post方法将结果赋值给result
         HttpResponse response = TestConfig.defaultHttpClient.execute(post);
         result = EntityUtils.toString(response.getEntity(),"utf-8");
-        JSONArray jsonArray = new JSONArray();
-        jsonArray.add(result);
+//        List resultlist = Arrays.asList(result);
+        JSONArray jsonArray = new JSONArray(result);
         return jsonArray;
     }
 }
