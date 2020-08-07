@@ -14,9 +14,14 @@
             <!--</methods>-->
         <!--</class>-->
 
-            <class name ="com.course.cases.GetUserInfoListTest">
+<!--            <class name ="com.course.cases.GetUserInfoListTest">-->
+<!--                <methods>-->
+<!--                    <include name ="getUserListInfo"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+            <class name="com.course.cases.AddUserTest">
                 <methods>
-                    <include name ="getUserListInfo"/>
+                    <include name="addUser"/>
                 </methods>
             </class>
 

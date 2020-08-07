@@ -6,3 +6,9 @@ http 指接口使用http协议
 -c startup1 指需要运行的json文件
 
 java -jar moco-runner-0.11.0-standalone.jar http -p 8888 -c setupc
+
+
+
+/Users/ksy/Downloads
+
+mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=11.2.0.3 -Dpackaging=jar -Dfile=/Users/ksy/Downloads/ojdbc6
