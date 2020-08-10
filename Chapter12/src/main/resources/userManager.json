@@ -137,7 +137,7 @@
       "uri":"/updateUserInfo",
       "method":"post",
       "json":{
-        "userId":"2",
+        "userId":2,
         "userName":"hahahaha"
       },
       "cookies":{

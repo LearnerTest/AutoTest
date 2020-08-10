@@ -48,17 +48,34 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe2800a7-66b9-433e-8372-1dc0ec511fbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter12/src/main/java/com/course/cases/AddUserTest.java" afterDir="false" />
+    <list default="true" id="fe2800a7-66b9-433e-8372-1dc0ec511fbc" name="Default Changelist" comment="0807">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_ojdbc6_11_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter12/src/main/java/com/course/cases/UpdateUserInfoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter13/Chapter13.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter13/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter13/src/main/java/com/course/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter13/src/main/java/com/course/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter13/src/main/java/com/course/controller/UserManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter13/src/main/java/com/course/model/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter13/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter13/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter13/src/main/resources/mapper/mysql.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter13/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/userManger.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TestJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TestJava.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12/Chapter12.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12/Chapter12.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter11/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter11/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter12/src/main/resources/databaseConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12/src/main/resources/databaseConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chapter12/src/main/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12/src/main/resources/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter12/src/main/resources/userManager.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12/src/main/resources/userManager.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chapter12/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12/test-output/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter7/文件说明" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter7/文件说明" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-07-20" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-07-20" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +126,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelOrder2" value="2" />
@@ -123,17 +141,21 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Chapter13/src/main/resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="config" />
       <recent name="com.course.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\AutoTest\Chapter12\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.F:/AutoTest/Chapter12/src/main/resources/testng.xml">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.course.test2" />
       <module name="Chapter12" />
@@ -143,6 +165,19 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Chapter13" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.course.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.course.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -175,24 +210,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetUserInfoTest.getUserInfo" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Chapter12" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.course.cases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.course.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.course.cases.GetUserInfoTest" />
-      <option name="METHOD_NAME" value="getUserInfo" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LoginTest.loginTrue" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Chapter12" />
       <extension name="coverage">
@@ -214,17 +231,17 @@
     <list>
       <item itemvalue="Application.test2" />
       <item itemvalue="TestNG.F:/AutoTest/Chapter12/src/main/resources/testng.xml" />
-      <item itemvalue="TestNG.GetUserInfoTest.getUserInfo" />
       <item itemvalue="TestNG.GetUserInfoListTest.getUserListInfo" />
       <item itemvalue="TestNG.LoginTest.loginTrue" />
+      <item itemvalue="Spring Boot.Application" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Application" />
         <item itemvalue="TestNG.F:/AutoTest/Chapter12/src/main/resources/testng.xml" />
         <item itemvalue="TestNG.LoginTest.loginTrue" />
         <item itemvalue="Application.test2" />
         <item itemvalue="TestNG.GetUserInfoListTest.getUserListInfo" />
-        <item itemvalue="TestNG.GetUserInfoTest.getUserInfo" />
       </list>
     </recent_temporary>
   </component>
@@ -275,7 +292,8 @@
       <workItem from="1596432895929" duration="8640000" />
       <workItem from="1596766645623" duration="1845000" />
       <workItem from="1596771555508" duration="1244000" />
-      <workItem from="1596788088645" duration="2953000" />
+      <workItem from="1596788088645" duration="3720000" />
+      <workItem from="1597026786311" duration="15400000" />
     </task>
     <task id="LOCAL-00001" summary="0701">
       <created>1593589102970</created>
@@ -438,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596186594946</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="0807">
+      <created>1596791379758</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1596791379758</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,6 +492,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/AutoTest" />
     </ignored-roots>
@@ -486,54 +512,71 @@
     <MESSAGE value="0728" />
     <MESSAGE value="0728-1" />
     <MESSAGE value="0731" />
-    <option name="LAST_COMMIT_MESSAGE" value="0731" />
+    <MESSAGE value="0807" />
+    <option name="LAST_COMMIT_MESSAGE" value="0807" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1238" height="173" key="GridCell.Tab.0.bottom" timestamp="1596790603795">
+    <state x="299" y="309" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1597041203226">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state width="1238" height="173" key="GridCell.Tab.0.bottom/0.23.1280.709@0.23.1280.709" timestamp="1596790603795" />
-    <state width="1238" height="173" key="GridCell.Tab.0.center" timestamp="1596790603794">
+    <state x="299" y="309" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1280.709@0.23.1280.709" timestamp="1597041203226" />
+    <state width="1238" height="132" key="GridCell.Tab.0.bottom" timestamp="1597049555585">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state width="1238" height="173" key="GridCell.Tab.0.center/0.23.1280.709@0.23.1280.709" timestamp="1596790603794" />
-    <state width="1238" height="173" key="GridCell.Tab.0.left" timestamp="1596790603793">
+    <state width="1238" height="132" key="GridCell.Tab.0.bottom/0.23.1280.709@0.23.1280.709" timestamp="1597049555585" />
+    <state width="1238" height="132" key="GridCell.Tab.0.center" timestamp="1597049555584">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state width="1238" height="173" key="GridCell.Tab.0.left/0.23.1280.709@0.23.1280.709" timestamp="1596790603793" />
-    <state width="1238" height="173" key="GridCell.Tab.0.right" timestamp="1596790603795">
+    <state width="1238" height="132" key="GridCell.Tab.0.center/0.23.1280.709@0.23.1280.709" timestamp="1597049555584" />
+    <state width="1238" height="132" key="GridCell.Tab.0.left" timestamp="1597049555583">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state width="1238" height="173" key="GridCell.Tab.0.right/0.23.1280.709@0.23.1280.709" timestamp="1596790603794" />
-    <state width="1238" height="237" key="GridCell.Tab.1.bottom" timestamp="1596790611462">
+    <state width="1238" height="132" key="GridCell.Tab.0.left/0.23.1280.709@0.23.1280.709" timestamp="1597049555583" />
+    <state width="1238" height="132" key="GridCell.Tab.0.right" timestamp="1597049555584">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state width="1238" height="237" key="GridCell.Tab.1.bottom/0.23.1280.709@0.23.1280.709" timestamp="1596790611462" />
-    <state width="1238" height="237" key="GridCell.Tab.1.center" timestamp="1596790611460">
+    <state width="1238" height="132" key="GridCell.Tab.0.right/0.23.1280.709@0.23.1280.709" timestamp="1597049555584" />
+    <state width="1238" height="132" key="GridCell.Tab.1.bottom" timestamp="1597049555590">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state width="1238" height="237" key="GridCell.Tab.1.center/0.23.1280.709@0.23.1280.709" timestamp="1596790611460" />
-    <state width="1238" height="237" key="GridCell.Tab.1.left" timestamp="1596790611459">
+    <state width="1238" height="132" key="GridCell.Tab.1.bottom/0.23.1280.709@0.23.1280.709" timestamp="1597049555590" />
+    <state width="1238" height="132" key="GridCell.Tab.1.center" timestamp="1597049555589">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state width="1238" height="237" key="GridCell.Tab.1.left/0.23.1280.709@0.23.1280.709" timestamp="1596790611459" />
-    <state width="1238" height="237" key="GridCell.Tab.1.right" timestamp="1596790611461">
+    <state width="1238" height="132" key="GridCell.Tab.1.center/0.23.1280.709@0.23.1280.709" timestamp="1597049555589" />
+    <state width="1238" height="132" key="GridCell.Tab.1.left" timestamp="1597049555588">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state width="1238" height="237" key="GridCell.Tab.1.right/0.23.1280.709@0.23.1280.709" timestamp="1596790611461" />
+    <state width="1238" height="132" key="GridCell.Tab.1.left/0.23.1280.709@0.23.1280.709" timestamp="1597049555588" />
+    <state width="1238" height="132" key="GridCell.Tab.1.right" timestamp="1597049555589">
+      <screen x="0" y="23" width="1280" height="709" />
+    </state>
+    <state width="1238" height="132" key="GridCell.Tab.1.right/0.23.1280.709@0.23.1280.709" timestamp="1597049555589" />
+    <state x="149" y="23" width="982" height="709" key="SettingsEditor" timestamp="1597038482873">
+      <screen x="0" y="23" width="1280" height="709" />
+    </state>
+    <state x="149" y="23" width="982" height="709" key="SettingsEditor/0.23.1280.709@0.23.1280.709" timestamp="1597038482873" />
+    <state x="240" y="117" key="Vcs.Push.Dialog.v2" timestamp="1596791382304">
+      <screen x="0" y="23" width="1280" height="709" />
+    </state>
+    <state x="240" y="117" key="Vcs.Push.Dialog.v2/0.23.1280.709@0.23.1280.709" timestamp="1596791382304" />
+    <state x="68" y="23" key="new project wizard" timestamp="1597039196483">
+      <screen x="0" y="23" width="1280" height="709" />
+    </state>
+    <state x="68" y="23" key="new project wizard/0.23.1280.709@0.23.1280.709" timestamp="1597039196483" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Chapter12/src/main/java/com/course/cases/AddUserTest.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/Chapter12/src/main/java/com/course/cases/UpdateUserInfoTest.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Chapter12/src/main/java/com/course/cases/AddUserTest.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/Chapter12/src/main/java/com/course/cases/UpdateUserInfoTest.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

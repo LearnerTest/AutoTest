@@ -19,9 +19,15 @@
 <!--                    <include name ="getUserListInfo"/>-->
 <!--                </methods>-->
 <!--            </class>-->
-            <class name="com.course.cases.AddUserTest">
+<!--            <class name="com.course.cases.AddUserTest">-->
+<!--                <methods>-->
+<!--                    <include name="addUser"/>-->
+<!--                </methods>-->
+<!--            </class>class-->
+            <class name="com.course.cases.UpdateUserInfoTest">
                 <methods>
-                    <include name="addUser"/>
+                    <include name="updateUserInfo"/>
+                    <include name="deleteUser"/>
                 </methods>
             </class>
 
@@ -30,7 +36,7 @@
     <listeners>
         <!--<listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"/>-->
         <!--<listener class-name="com.imooc.extents.demo.ExtentTestNGIReporterListenerOld" />-->
-        <listener class-name="com.course.config.ExtentTestNGIReporterListener" />
+        <listener class-name="com.course.com.course.config.ExtentTestNGIReporterListener" />
 
     </listeners>
 </suite>
