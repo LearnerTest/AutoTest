@@ -1,52 +1,62 @@
 package com.course.cases;
 
 
-//import com.alibaba.fastjson.JSONObject;
+//import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
+import com.course.config.TestConfig;
+import com.course.model.Users;
+import com.course.model.getUserListCase;
+import com.course.utils.DatabseUtil;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
-import org.json.JSONObject;
+import org.apache.ibatis.session.SqlSession;
+import org.json.JSONArray;
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import java.io.IOException;
+import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class TestCase {
-    private String url;
-    private ResourceBundle bundle;
 
-    @BeforeTest
-    public void getUrl(){
-        bundle = ResourceBundle.getBundle("application", Locale.CHINA);
-        url = bundle.getString("test.url");
+    @Test(dependsOnGroups = "loginTrue",description = "测试方法")
+    public void getUserInfo() throws IOException {
+        SqlSession session = DatabseUtil.getSqlSession();
+        getUserListCase getUserList = session.selectOne("getUserListCase",1);
+        JSONArray resultJson = getResultJson(getUserList);
+        List<Users> users = session.selectList(getUserList.getExpected(),getUserList);
+        for(Users u:users){
+            System.out.println(u.toString());
+        }
+        JSONArray userListJson = new JSONArray(users);
+        Assert.assertEquals(resultJson.length(),userListJson.length());
+        for(int i = 0 ;i<resultJson.length();i++){
+            JSONObject expect = (JSONObject) resultJson.get(i);
+            JSONObject actual = (JSONObject) userListJson.get(i);
+            Assert.assertEquals(expect.toString(),actual.toString());
+        }
     }
 
-    @Test
-    public void getMethodByCookie() throws IOException {
-        String uri = bundle.getString("login.uri");
-        String testUrl = this.url + uri;
-        //声明一个Client对象，用来进行方法的执行
-        DefaultHttpClient client = new DefaultHttpClient();
-        //声明一个方法，这个方法就是post方法
-        HttpPost post = new HttpPost(testUrl);
-        //添加参数
+    private JSONArray getResultJson(getUserListCase getUserList) throws IOException {
+        HttpPost post = new HttpPost(TestConfig.getUserListUrl);
         JSONObject param = new JSONObject();
-        param.put("name", "zhangsan");
-        param.put("password", "123456");
-        //设置请求头信息，设置header
-        post.setHeader("content-type", "application/json");
-        //将参数信息添加到方法中
-        StringEntity entity = new StringEntity(param.toString(), "utf-8");
+        param.put("userName",getUserList.getUserName());
+        param.put("sex",getUserList.getSex());
+        param.put("age",getUserList.getAge());
+        post.setHeader("content-type","application/json");
+        StringEntity entity = new StringEntity(param.toString(),"utf-8");
         post.setEntity(entity);
-        //执行post方法
-        HttpResponse response = client.execute(post);
-        //获取响应结果
-        String result = EntityUtils.toString(response.getEntity(), "utf-8");
-        System.out.println(result);
+        TestConfig.defaultHttpClient.setCookieStore(TestConfig.store);
+        String result;
+        HttpResponse response = TestConfig.defaultHttpClient.execute(post);
+        result = EntityUtils.toString(response.getEntity(),"utf-8");
+        JSONArray jsonArray = new JSONArray(result);
+        return  jsonArray;
     }
 
 }
