@@ -65,7 +65,7 @@
         <dependency>
             <groupId>com.oracle</groupId>
             <artifactId>ojdbc6</artifactId>
-            <version>11.2.3</version>
+            <version>11.2.0.3</version>
         </dependency>
 
         <!-- Druid数据源，配置oracle数据源时使用 -->
@@ -93,6 +93,10 @@
             <artifactId>swagger-annotations</artifactId>
             <version>1.5.10</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
         </dependency>
     </dependencies>
 
