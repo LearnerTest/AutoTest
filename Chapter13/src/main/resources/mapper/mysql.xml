@@ -14,7 +14,7 @@
         insert into
         users(userName,password,sex,age,permission,isDelete)
         values
-        (#{userName},#{password},#{sex},#{age},#{permission},#{isDelete});
+        (#{userName},#{password},#{sex},#{age},#{permission},#{isDelete})
 
     </insert>
     <!--获取用户sql-->

@@ -48,16 +48,17 @@ public class LoginTest {
         //assert判断结果和期望是否一致
         Assert.assertEquals(expected, result);
     }
-
     @Test(description = "登录失败接口")
     public void loginfalse() throws IOException {
         SqlSession session = DatabseUtil.getSqlSession();
         loginCase logincase = session.selectOne("loginCase", 2);
-        System.out.println(logincase.toString());
-        System.out.println(TestConfig.loginUrl);
+//        System.out.println(logincase.toString());
+//        System.out.println(TestConfig.loginUrl);
         String result = getResult(logincase);
 //        Assert.assertEquals(logincase.getExpected(), result);
-        Assert.assertNotEquals(logincase.getExpected(), result);
+        System.out.println(result);
+        String expect = logincase.getExpected();
+        Assert.assertEquals(expect,result);
     }
 
     public static String getResult(loginCase logincase) throws IOException {
@@ -67,7 +68,7 @@ public class LoginTest {
         //添加参数
         JSONObject param = new JSONObject();
         //需要和mock的接口参数名一致
-        param.put("name", logincase.getUserName());
+        param.put("userName", logincase.getUserName());
         param.put("password", logincase.getPassword());
         //设置请求头信息，设置header
         post.setHeader("content-type", "application/json");

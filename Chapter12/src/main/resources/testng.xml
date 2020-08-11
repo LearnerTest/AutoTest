@@ -5,38 +5,43 @@
             <class name ="com.course.cases.LoginTest">
                 <methods>
                     <include name="loginTrue"/>
-                    <!--<include name="loginfalse"/>-->
+                    <include name="loginfalse"/>
                 </methods>
             </class>
-            <!--<class name ="com.course.cases.GetUserInfoTest">-->
-            <!--<methods>-->
-                <!--<include name ="getUserInfo"/>-->
-            <!--</methods>-->
-        <!--</class>-->
 
-<!--            <class name ="com.course.cases.GetUserInfoListTest">-->
-<!--                <methods>-->
-<!--                    <include name ="getUserListInfo"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--            <class name="com.course.cases.AddUserTest">-->
-<!--                <methods>-->
-<!--                    <include name="addUser"/>-->
-<!--                </methods>-->
-<!--            </class>class-->
+            <class name ="com.course.cases.GetUserInfoTest">
+            <methods>
+                <include name ="getUserInfo"/>
+            </methods>
+        </class>
+
+            <class name ="com.course.cases.GetUserInfoListTest">
+                <methods>
+                    <include name ="getUserListInfo"/>
+                </methods>
+            </class>
+            <class name="com.course.cases.AddUserTest">
+                <methods>
+                    <include name="addUser"/>
+                </methods>
+            </class>
             <class name="com.course.cases.UpdateUserInfoTest">
                 <methods>
                     <include name="updateUserInfo"/>
                     <include name="deleteUser"/>
                 </methods>
             </class>
-
+<!--            <class name="com.course.cases.TestCase">-->
+<!--                <methods>-->
+<!--                    <include name="getUserInfo"/>-->
+<!--                </methods>-->
+<!--            </class>-->
         </classes>
     </test>
     <listeners>
         <!--<listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"/>-->
         <!--<listener class-name="com.imooc.extents.demo.ExtentTestNGIReporterListenerOld" />-->
-        <listener class-name="com.course.com.course.config.ExtentTestNGIReporterListener" />
+        <listener class-name="com.course.config.ExtentTestNGIReporterListener" />
 
     </listeners>
 </suite>

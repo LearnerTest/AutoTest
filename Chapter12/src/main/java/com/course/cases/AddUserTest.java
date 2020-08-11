@@ -9,6 +9,7 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.util.EntityUtils;
 import org.apache.ibatis.session.SqlSession;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -21,6 +22,7 @@ public class AddUserTest {
         addUserCase addUser = session.selectOne("addUserCase",1);
         String result = getResult(addUser);
         System.out.println(result.toString());
+        Assert.assertEquals(addUser.getExpected(),result);
 
     }
 

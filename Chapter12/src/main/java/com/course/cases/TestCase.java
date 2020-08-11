@@ -43,11 +43,12 @@ public class TestCase {
     }
 
     private JSONArray getResultJson(getUserListCase getUserList) throws IOException {
-        HttpPost post = new HttpPost(TestConfig.getUserListUrl);
+        HttpPost post = new HttpPost(TestConfig.getUserInfoUrl);
+//        System.out.println(TestConfig.getUserListUrl);
         JSONObject param = new JSONObject();
-        param.put("userName",getUserList.getUserName());
+//        param.put("userName",getUserList.getUserName());
         param.put("sex",getUserList.getSex());
-        param.put("age",getUserList.getAge());
+//        param.put("age",getUserList.getAge());
         post.setHeader("content-type","application/json");
         StringEntity entity = new StringEntity(param.toString(),"utf-8");
         post.setEntity(entity);

@@ -16,8 +16,6 @@ import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class GetUserInfoListTest {
@@ -27,15 +25,15 @@ public class GetUserInfoListTest {
         SqlSession session = DatabseUtil.getSqlSession();
         getUserListCase getUserList = session.selectOne("getUserListCase",1);
         JSONArray resultJson = getJsonResult(getUserList);
-//        Thread.sleep(2000);
         List<Users> userList = session.selectList(getUserList.getExpected(),"0");
-// for(Users u:userList){
+        System.out.println(resultJson.getClass().getName());
+//        for(Users u:userList){
 //            System.out.println("获取的user："+u.toString());
 //        }
-//        JSONArray userListJson = JSONArray.parseArray(userList.toString());
-        JSONObject expect1 =  resultJson.getJSONObject(0);
-        Assert.assertEquals(expect1.get("userName"),"zhangsan");
-        for(int i = 0 ;i<resultJson.length();i++){
+//        JSONArray userListJson = JSONArray.parseArray(JSONObject.toJSONString(userList));
+//        JSONObject expect =  resultJson.getJSONObject(0);
+//        Assert.assertEquals(expect.get("userName"),"zhangsan");
+        for(int i=0;i<resultJson.length();i++){
             JSONObject expect =  resultJson.getJSONObject(i);
             System.out.println(expect.get("userName"));
         }
@@ -43,7 +41,6 @@ public class GetUserInfoListTest {
 
     private JSONArray getJsonResult(getUserListCase getuserlist) throws IOException {
         HttpPost post = new HttpPost(TestConfig.getUserListUrl);
-        System.out.println(TestConfig.getUserListUrl);
         JSONObject param = new JSONObject();
         param.put("sex",getuserlist.getSex());
 //        param.put("userName",getuserlist.getUserName());
@@ -60,6 +57,7 @@ public class GetUserInfoListTest {
         result = EntityUtils.toString(response.getEntity(),"utf-8");
 //        List resultlist = Arrays.asList(result);
         JSONArray jsonArray = new JSONArray(result);
+//        jsonArray.add(result);
         return jsonArray;
     }
 }

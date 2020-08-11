@@ -56,7 +56,7 @@ public class UserManager {
         return false;
     }
 
-    @ApiOperation(value = "获取用户信息借口",httpMethod = "POST")
+    @ApiOperation(value = "获取用户信息接口",httpMethod = "POST")
     @RequestMapping(value = "/getUserInfo")
     public List<Users> getUserInfo(HttpServletRequest request,@RequestBody Users user){
         Boolean x = verifyCookies(request);

@@ -9,6 +9,7 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.util.EntityUtils;
 import org.apache.ibatis.session.SqlSession;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -20,6 +21,7 @@ public class UpdateUserInfoTest {
         updateUserInfoCase updateuserinfo=session.selectOne("updateUserInfoCase",1);
         String result = getResult(updateuserinfo);
         System.out.println(result);
+        Assert.assertEquals(result,"1");
     }
     @Test(dependsOnGroups = "loginTrue",description = "删除用户")
     public void deleteUser() throws IOException, InterruptedException {
@@ -38,8 +40,8 @@ public class UpdateUserInfoTest {
 //        param.put("age",updateuserinfo.getAge());
 //        param.put("sex",updateuserinfo.getSex());
 //        param.put("permission",updateuserinfo.getPermission());
-        param.put("userId",updateuserinfo.getUserId());
-//        param.put("isDelete",updateuserinfo.getIsDelete());
+        param.put("id",updateuserinfo.getUserId());
+        param.put("isDelete",updateuserinfo.getIsDelete());
         post.setHeader("content-type", "application/json");
         StringEntity entity = new StringEntity(param.toString(),"utf-8");
         post.setEntity(entity);

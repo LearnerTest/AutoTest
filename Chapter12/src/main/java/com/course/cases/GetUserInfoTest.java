@@ -2,8 +2,8 @@ package com.course.cases;
 
 
 
-import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
+//import com.alibaba.fastjson.JSONArray;
+//import com.alibaba.fastjson.JSONObject;
 import com.course.config.TestConfig;
 import com.course.model.Users;
 import com.course.model.getUserInfoCase;
@@ -13,8 +13,8 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.util.EntityUtils;
 import org.apache.ibatis.session.SqlSession;
-//import org.json.JSONArray;
-//import org.json.JSONObject;
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.io.IOException;
@@ -36,12 +36,10 @@ public class GetUserInfoTest {
         System.out.println(user.toString());
 
         //取接口返回数据部分字段进行判断
-        for(int i= 0;i<resultJson.size();i++){
-            String jsonObject1 = (String) resultJson.get(i);
-            JSONObject jsonObject = JSONObject.parseObject(jsonObject1);
-            String message = jsonObject.getString("userName");
-            System.out.println(message);
-            Assert.assertEquals(message,"zhangsan");
+        for(int i= 0;i<resultJson.length();i++){
+            JSONObject job = resultJson.getJSONObject(i);
+            System.out.println(job.get("userName"));
+            Assert.assertEquals(job.get("userName"),"zhangsan");
         }
     }
 
@@ -49,7 +47,7 @@ public class GetUserInfoTest {
         HttpPost post = new HttpPost(TestConfig.getUserInfoUrl);
         //添加参数,JSONObject不能选错了
         JSONObject param = new JSONObject();
-        param.put("userId",userinfo.getUserId());
+        param.put("id",userinfo.getUserId());
         //设置请求头信息，设置header
         post.setHeader("content-type", "application/json");
         //将参数信息添加到方法中
@@ -65,9 +63,9 @@ public class GetUserInfoTest {
         result = EntityUtils.toString(response.getEntity(),"utf-8");
         System.out.println("调用接口的result："+result);
         //用Arrays.asList将数组转成list
-        List resultlist = Arrays.asList(result);
+//        List resultlist = Arrays.asList(result);
         //将返回的响应结果字符串转化成为json对象
-        JSONArray array = new JSONArray(resultlist);
+        JSONArray array = new JSONArray(result);
         System.out.println("结果返回:"+ array.toString());
         return array;
     }
