@@ -2,11 +2,12 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Chapter13" />
+        <module name="Chapter" />
         <module name="Chapter12" />
         <module name="Chapter11" />
         <module name="Chapter10" />
@@ -22,14 +23,21 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Chapter" target="1.8" />
       <module name="Chapter10" target="8" />
       <module name="Chapter11" target="1.6" />
       <module name="Chapter12" target="1.6" />
-      <module name="Chapter13" target="8" />
+      <module name="Chapter13" target="1.6" />
       <module name="Chapter5" target="1.5" />
       <module name="Chapter6" target="6" />
       <module name="Chapter9" target="1.6" />
-      <module name="TestJava" target="8" />
+      <module name="TestJava" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Chapter" options="-extdirs $PROJECT_DIR$/Chapter13/lib" />
+      <module name="TestJava" options="-extdirs $PROJECT_DIR$/Chapter13/lib" />
+    </option>
   </component>
 </project>

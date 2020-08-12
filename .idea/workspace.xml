@@ -48,32 +48,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe2800a7-66b9-433e-8372-1dc0ec511fbc" name="Default Changelist" comment="0810">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/userManger.log.2020-08-10" afterDir="false" />
+    <list default="true" id="fe2800a7-66b9-433e-8372-1dc0ec511fbc" name="Default Changelist" comment="0811">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_ojdbc6_11_2_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_spingfox_sspringfox_swagger_ui_2_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_41.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter13/Chapter.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/userManger.log.2020-08-11" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/TestJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TestJava.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_ojdbc6_11_2_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_spingfox_sspringfox_swagger_ui_2_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_41.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter10/Chapter10.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter10/Chapter10.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chapter11/Chapter11.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter11/Chapter11.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter11/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter11/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12/src/main/java/com/course/cases/AddUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12/src/main/java/com/course/cases/AddUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12/src/main/java/com/course/cases/GetUserInfoListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12/src/main/java/com/course/cases/GetUserInfoListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12/src/main/java/com/course/cases/GetUserInfoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12/src/main/java/com/course/cases/GetUserInfoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12/src/main/java/com/course/cases/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12/src/main/java/com/course/cases/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12/src/main/java/com/course/cases/TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12/src/main/java/com/course/cases/TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12/src/main/java/com/course/cases/UpdateUserInfoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12/src/main/java/com/course/cases/UpdateUserInfoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12/src/main/resources/databaseConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12/src/main/resources/databaseConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12/src/main/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12/src/main/resources/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12/src/main/resources/userManager.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12/src/main/resources/userManager.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter12/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chapter12/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12/test-output/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chapter13/Chapter13.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter13/Chapter13.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chapter13/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter13/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter13/src/main/java/com/course/controller/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter13/src/main/java/com/course/controller/UserManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter13/src/main/resources/mapper/mysql.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter13/src/main/resources/mapper/mysql.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter6/Chapter6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter6/Chapter6.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/userManger.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/userManger.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -154,16 +147,16 @@
       <recent name="F:\AutoTest\Chapter12\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.F:/AutoTest/Chapter12/src/main/resources/testng.xml">
-    <configuration name="test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.course.test2" />
-      <module name="Chapter12" />
+  <component name="RunManager" selected="Spring Boot.Application (1)">
+    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Chapter" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.course.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.course.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -228,19 +221,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.test2" />
       <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="Spring Boot.Application (1)" />
       <item itemvalue="TestNG.F:/AutoTest/Chapter12/src/main/resources/testng.xml" />
       <item itemvalue="TestNG.LoginTest.loginTrue" />
       <item itemvalue="TestNG.TestCase.getUserInfo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Application (1)" />
         <item itemvalue="TestNG.F:/AutoTest/Chapter12/src/main/resources/testng.xml" />
         <item itemvalue="Spring Boot.Application" />
         <item itemvalue="TestNG.TestCase.getUserInfo" />
         <item itemvalue="TestNG.LoginTest.loginTrue" />
-        <item itemvalue="Application.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -294,7 +287,9 @@
       <workItem from="1596788088645" duration="3720000" />
       <workItem from="1597026786311" duration="17194000" />
       <workItem from="1597118477668" duration="299000" />
-      <workItem from="1597118817480" duration="13909000" />
+      <workItem from="1597118817480" duration="14634000" />
+      <workItem from="1597196397406" duration="2833000" />
+      <workItem from="1597200549418" duration="1040000" />
     </task>
     <task id="LOCAL-00001" summary="0701">
       <created>1593589102970</created>
@@ -471,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597049991267</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="0811">
+      <created>1597138042848</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1597138042848</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,11 +492,41 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
           </value>
         </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
@@ -522,7 +554,8 @@
     <MESSAGE value="0731" />
     <MESSAGE value="0807" />
     <MESSAGE value="0810" />
-    <option name="LAST_COMMIT_MESSAGE" value="0810" />
+    <MESSAGE value="0811" />
+    <option name="LAST_COMMIT_MESSAGE" value="0811" />
   </component>
   <component name="WindowStateProjectService">
     <state x="100" y="123" width="1080" height="509" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1597136677466">
@@ -537,38 +570,38 @@
       <screen x="0" y="23" width="1280" height="709" />
     </state>
     <state x="299" y="309" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1280.709@0.23.1280.709" timestamp="1597041203226" />
-    <state width="1238" height="316" key="GridCell.Tab.0.bottom" timestamp="1597137609624">
+    <state width="1238" height="121" key="GridCell.Tab.0.bottom" timestamp="1597215622765">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state width="1238" height="316" key="GridCell.Tab.0.bottom/0.23.1280.709@0.23.1280.709" timestamp="1597137609624" />
-    <state width="1238" height="316" key="GridCell.Tab.0.center" timestamp="1597137609623">
+    <state width="1238" height="121" key="GridCell.Tab.0.bottom/0.23.1280.709@0.23.1280.709" timestamp="1597215622765" />
+    <state width="1238" height="121" key="GridCell.Tab.0.center" timestamp="1597215622764">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state width="1238" height="316" key="GridCell.Tab.0.center/0.23.1280.709@0.23.1280.709" timestamp="1597137609623" />
-    <state width="1238" height="316" key="GridCell.Tab.0.left" timestamp="1597137609622">
+    <state width="1238" height="121" key="GridCell.Tab.0.center/0.23.1280.709@0.23.1280.709" timestamp="1597215622764" />
+    <state width="1238" height="121" key="GridCell.Tab.0.left" timestamp="1597215622764">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state width="1238" height="316" key="GridCell.Tab.0.left/0.23.1280.709@0.23.1280.709" timestamp="1597137609622" />
-    <state width="1238" height="316" key="GridCell.Tab.0.right" timestamp="1597137609623">
+    <state width="1238" height="121" key="GridCell.Tab.0.left/0.23.1280.709@0.23.1280.709" timestamp="1597215622764" />
+    <state width="1238" height="121" key="GridCell.Tab.0.right" timestamp="1597215622765">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state width="1238" height="316" key="GridCell.Tab.0.right/0.23.1280.709@0.23.1280.709" timestamp="1597137609623" />
-    <state width="1238" height="196" key="GridCell.Tab.1.bottom" timestamp="1597137252759">
+    <state width="1238" height="121" key="GridCell.Tab.0.right/0.23.1280.709@0.23.1280.709" timestamp="1597215622765" />
+    <state width="1238" height="121" key="GridCell.Tab.1.bottom" timestamp="1597215622769">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state width="1238" height="196" key="GridCell.Tab.1.bottom/0.23.1280.709@0.23.1280.709" timestamp="1597137252759" />
-    <state width="1238" height="196" key="GridCell.Tab.1.center" timestamp="1597137252758">
+    <state width="1238" height="121" key="GridCell.Tab.1.bottom/0.23.1280.709@0.23.1280.709" timestamp="1597215622769" />
+    <state width="1238" height="121" key="GridCell.Tab.1.center" timestamp="1597215622768">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state width="1238" height="196" key="GridCell.Tab.1.center/0.23.1280.709@0.23.1280.709" timestamp="1597137252758" />
-    <state width="1238" height="196" key="GridCell.Tab.1.left" timestamp="1597137252757">
+    <state width="1238" height="121" key="GridCell.Tab.1.center/0.23.1280.709@0.23.1280.709" timestamp="1597215622768" />
+    <state width="1238" height="121" key="GridCell.Tab.1.left" timestamp="1597215622766">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state width="1238" height="196" key="GridCell.Tab.1.left/0.23.1280.709@0.23.1280.709" timestamp="1597137252757" />
-    <state width="1238" height="196" key="GridCell.Tab.1.right" timestamp="1597137252758">
+    <state width="1238" height="121" key="GridCell.Tab.1.left/0.23.1280.709@0.23.1280.709" timestamp="1597215622766" />
+    <state width="1238" height="121" key="GridCell.Tab.1.right" timestamp="1597215622768">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state width="1238" height="196" key="GridCell.Tab.1.right/0.23.1280.709@0.23.1280.709" timestamp="1597137252758" />
+    <state width="1238" height="121" key="GridCell.Tab.1.right/0.23.1280.709@0.23.1280.709" timestamp="1597215622768" />
     <state width="1238" height="165" key="GridCell.Tab.2.bottom" timestamp="1597134573171">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
@@ -597,14 +630,14 @@
       <screen x="0" y="23" width="1280" height="709" />
     </state>
     <state x="149" y="23" width="982" height="709" key="SettingsEditor/0.23.1280.709@0.23.1280.709" timestamp="1597038482873" />
-    <state x="240" y="117" key="Vcs.Push.Dialog.v2" timestamp="1597049994472">
+    <state x="240" y="117" key="Vcs.Push.Dialog.v2" timestamp="1597138046341">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state x="240" y="117" key="Vcs.Push.Dialog.v2/0.23.1280.709@0.23.1280.709" timestamp="1597049994472" />
-    <state x="431" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597125490468">
+    <state x="240" y="117" key="Vcs.Push.Dialog.v2/0.23.1280.709@0.23.1280.709" timestamp="1597138046341" />
+    <state x="431" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597200400277">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state x="431" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.709@0.23.1280.709" timestamp="1597125490468" />
+    <state x="431" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.709@0.23.1280.709" timestamp="1597200400277" />
     <state x="68" y="23" key="new project wizard" timestamp="1597039196483">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
